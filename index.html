@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratheesha S - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+  <h1>Hello, I'm Pratheesha S</h1>
+  <h2>Aspiring Full Stack Developer | Cybersecurity Enthusiast</h2>
+  <p>Passionate about building secure web applications and learning new technologies.</p>
+
+ <section>
+  <h2>About Me</h2>
+  <p>
+    I’m Pratheesha S, a passionate Full Stack Developer and Cybersecurity Enthusiast. I love solving problems, building web applications, and exploring new technologies. I’m focused on improving my skills in development and security to contribute to building a safer internet.
+  </p>
+ </section>
+
+  <h3>Education</h3>
+  <ul>
+    <li>B.E. Computer Science - Arunachala College of Engineering for Women | 83.60%</li>
+    <li>HSC - Hindu Vidyalaya Matriculation School | 90%</li>
+    <li>SSLC - Hindu Vidyalaya Matriculation School | 89%</li>
+  </ul>
+  <h2>Projects</h2>
+  <ul>
+  <li>
+    <strong>Blood Group Detection using Fingerprint</strong><br>
+    <em>A Machine Learning based Mini Project</em><br>
+    Developed a system that predicts the blood group of a person using fingerprint patterns. Implemented machine learning algorithms to analyze biometric data.<br>
+    <strong>Technologies Used</strong>: Python, Machine Learning, Sklearn, Jupyter Notebook
+  </li>
+  </ul>
+
+  <h3>Skills</h3>
+  <ul>
+    <li>Python</li>
+    <li>MYSQL</li>
+    <li>Java</li>
+    <li>MongoDB</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Figma</li>
+  </ul>
+
+  <h3>Certifications</h3>
+  <ul>
+    <li>Advanced SQL - Great Learning</li>
+    <li>Effective Leadership - HP LIFE</li>
+    <li>Introduction to Cybersecurity - Cisco</li>
+    <li>Data Analytics and Visualization Job Simulation - Forage</li>
+    <li>Rashtrabasha - Dakshina Bharat Hindi Prachar Sabha</li>
+  </ul>
+
+  <h3>Connect with Me</h3>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/pratheeshas" target="_blank">Pratheesha S</a></p>
+<section>
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:pratheeshacse25@gmail.com">pratheeshacse25@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/pratheeshas" target="_blank">linkedin.com/in/pratheeshas</a></p>
+</section>
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+
+  // Check localStorage on page load
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+  }
+
+  // Toggle dark mode and store preference
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    if (document.body.classList.contains('dark-mode')) {
+      toggle.textContent = '☀️';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      toggle.textContent = '🌙';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+</script>
+</body>
+</html>

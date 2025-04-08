@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Pratheesha S - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <h1>Hello, I'm Pratheesha S</h1>
   <h2>Aspiring Full Stack Developer | Cybersecurity Enthusiast</h2>
   <p>Passionate about building secure web applications and learning new technologies.</p>
 
- <section>
+ <section id="about">
   <h2>About Me</h2>
   <p>
-    I’m Pratheesha S, a passionate Full Stack Developer and Cybersecurity Enthusiast. I love solving problems, building web applications, and exploring new technologies. I’m focused on improving my skills in development and security to contribute to building a safer internet.
+     I'm a passionate and self-motivated Computer Science graduate, eager to grow in the tech world.
+    I enjoy learning new technologies and building clean, user-friendly websites. 
+    Currently, I’m focused on improving my skills in Frontend Development, Python, and Cybersecurity.
   </p>
+   <p>
+    I believe in learning by doing, and this portfolio is a reflection of my journey so far.
+    I’m constantly exploring new tools and techniques to improve myself and create impactful digital experiences.
+   </p>
+   <p>
+    I'm open to internships, freelance work and collaborative projects. Let's connect and build something great together!
+   </p>
  </section>
 
-  <h3>Education</h3>
+  <h3 id="education">Education</h3>
   <ul>
     <li>B.E. Computer Science - Arunachala College of Engineering for Women | 83.60%</li>
     <li>HSC - Hindu Vidyalaya Matriculation School | 90%</li>
     <li>SSLC - Hindu Vidyalaya Matriculation School | 89%</li>
   </ul>
-  <h2>Projects</h2>
+  <h2 id="projects">Projects</h2>
   <ul>
   <li>
     <strong>Blood Group Detection using Fingerprint</strong><br>
@@ -34,17 +57,42 @@
   </li>
   </ul>
 
-  <h3>Skills</h3>
+  <section id="skills">
+  <h2>Skills</h2>
+  <h3>Frontend Development</h3>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Responsive Web Design</li>
+  </ul>
+  <h3>Programming Lnaguages</h3>
   <ul>
     <li>Python</li>
-    <li>MYSQL</li>
-    <li>Java</li>
-    <li>MongoDB</li>
-    <li>HTML, CSS, JavaScript</li>
-    <li>Figma</li>
+    <li>Java(Basics)</li>
   </ul>
+  <h3>Database & Operarting System</h3>
+  <ul>
+    <li>MYSQL</li>
+    <li>MongoDB</li>
+    <li>Windows</li>
+    <li>Linux</li>
+  </ul>
+  <h3>Tools & Platforms</h3>
+  <ul>
+     <li>Figma</li>
+     <li>Git & Github</li>
+     <li>Visual Studio Code</li>
+  </ul>
+  <h3>Currently Learning</h3>
+  <ul>
+     <li>Full Stack Development</li>
+     <li>Cybersecurity</li>
+  </ul>
+  </section> 
+    
 
-  <h3>Certifications</h3>
+  <h3 id="certifications">Certifications</h3>
   <ul>
     <li>Advanced SQL - Great Learning</li>
     <li>Effective Leadership - HP LIFE</li>
@@ -55,11 +103,32 @@
 
   <h3>Connect with Me</h3>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/pratheeshas" target="_blank">Pratheesha S</a></p>
-<section>
+<section id="contact">
   <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:pratheeshacse25@gmail.com">pratheeshacse25@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/pratheeshas" target="_blank">linkedin.com/in/pratheeshas</a></p>
+  <section id="contact" style="padding: 40px; background-color: #f1f1f1;">
+  <h2 style="text-align: center;">Contact Me</h2>
+  
+  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap;">
+    
+    <a href="mailto:pratheeshacse25@gmail.com" target="_blank" style="text-decoration: none; color: black;">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <a href="https://github.com/Pratheeshasanil" target="_blank" style="text-decoration: none; color: black;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a href="https://linkedin.com/in/Pratheesha S" target="_blank" style="text-decoration: none; color: black;">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+  </div>
 </section>
+</section>
+  <footer class="footer">
+     <p>&copy; 2025 Pratheesha S. All rights reserved.
+    </p>
+  </footer>
 <script>
   const toggle = document.getElementById('darkModeToggle');
 

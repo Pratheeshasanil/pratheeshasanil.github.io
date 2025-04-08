@@ -77,3 +77,58 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
+nav {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* For dark mode */
+body.dark-mode nav {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode nav ul li a {
+  color: #eee;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #FFD700;
+}
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* Footer in dark mode */
+body.dark-mode .footer {
+  background-color: #222;
+  color: #eee;
+}

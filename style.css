@@ -132,3 +132,9 @@ body.dark-mode .footer {
   background-color: #222;
   color: #eee;
 }
+<style>
+  body {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+  }
+</style>
